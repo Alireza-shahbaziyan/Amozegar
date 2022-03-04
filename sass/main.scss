@@ -1,0 +1,65 @@
+$bgc:#1d2026;
+
+@mixin division {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 45vh;
+    margin: 0%;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+}
+
+@mixin image-size {
+    position: absolut;
+    margin: 10% 0 0 10%;
+    top: -20px;
+    left: 22%;
+    width: 43%;
+}
+
+body {
+    background-color: $bgc;
+}
+
+#header_box {
+    min-height: 75vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    margin-top: 4%;
+}
+
+.btn-plant {
+    background-color: #54246b;
+    color: #fff;
+}
+
+#header_box h1 {
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8rem;
+}
+
+.CPP_box {
+    @include division();
+}
+
+.image_cpp {
+    @include image-size()
+}
+
+.JS_box {
+    @include division();
+}
+
+.image_JS {
+    @include image-size()
+}
+
+.frist-svg {
+    fill: $bgc;
+}
+
+.second-svg {
+    fill: #f1f4f8;
+}
